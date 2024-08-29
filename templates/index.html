@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Enzo C. Barbieri</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Enzo C. Barbieri</h1>
+            <p>Analista de suporte / Desenvolvedor</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('contact') }}">Contato</a></li>
+                <li><a href="{{ url_for('experience') }}">Experiência/Certificações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="profile-pic">
+                <img src="{{ url_for('static', filename='minha_foto.jpg') }}" alt="Foto de Enzo C. Barbieri">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Enzo e sou um desenvolvedor em ascensão. Atualmente, trabalho como analista de suporte no grupo HNK, mas estou em busca de novas oportunidades para expandir meu conhecimento e crescer na área de desenvolvimento. Além disso, estou cursando Ciências da Computação na Faculdade Unimax, o que complementa minha experiência prática com uma sólida formação acadêmica..</p>
+            </div>
+        </section>
+
+        <section class="skills">
+    <h2>Minhas Habilidades:</h2>
+    <ul>
+        <li>Linguagens de Programação: Python, C++, HTML, CSS, Java</li>
+        <li>Motores de Jogo: Unreal, GameMaker</li>
+        <li>Ferramentas: Git, Office, SAP</li>
+    </ul>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Enzo C. Barbieri - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
